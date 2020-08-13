@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<%= form_for Funcionario.new do |f| %>
+	Nome<input type="text" name="funcionario[nome]"><br>
+
+Endereço<input type="text" name="funcionario[endereco]"><br>
+
+Telefone<input type="text" name="funcionario[telefone]"><br>
+
+CPF<input type="text" name="funcionario[cpf]"><br>
+
+RG<input type="text" name="funcionario[rg]"><br>
+
+CNPJ<input type="text" name="funcionario[cnpj]"><br>
+
+Insrição Estadual<input type="text" name="funcionario[inscricao_estadual]"><br>
+
+	<button type="submit">Cadastra</button>
+
+		<%  end %>
+</body>
+</html>

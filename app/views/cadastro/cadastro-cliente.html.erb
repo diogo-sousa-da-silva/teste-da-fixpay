@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+</head>
+<body>
+	<%= form_for Cliente.new do |f| %>
+	
+Nome<input type="text" name="cliente[nome]"><br>
+
+Endereço<input type="text" name="cliente[endereco]"><br>
+
+Telefone<input type="text" name="cliente[telefone]"><br>
+
+CPF<input type="text" name="cliente[cpf]"><br>
+
+RG<input type="text" name="cliente[rg]"><br>
+
+CNPJ<input type="text" name="cliente[cnpj]"><br>
+
+Insrição Estadual<input type="text" name="cliente[inscricao_estadual]"><br>
+
+	<button type="submit">Cadastra</button>
+<% end %>
+</body>
+</html>

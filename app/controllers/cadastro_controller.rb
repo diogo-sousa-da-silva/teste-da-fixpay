@@ -10,4 +10,10 @@ class CadastroController < ApplicationController
 		funcionario = Funcionario.create valor_func
 	end
 
+	def create_pago
+		valor_pago = params.require(:pago).permit!
+
+		pago = ContaPaga.create valor_pago
+	end
+
 end

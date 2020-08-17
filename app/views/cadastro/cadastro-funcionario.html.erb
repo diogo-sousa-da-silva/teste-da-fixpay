@@ -2,25 +2,104 @@
 <html>
 <head>
 	<title></title>
+ <style type="text/css">
+ 	body{
+  	
+  	margin: 0;
+  	padding: 0;
+  	font-family: sans-serif;
+  
+}
+.div{
+  
+  height: 320px;
+  width: 600px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.div input{
+  border:none;
+  border-bottom: 1px solid ;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  
+  margin: 0 20px;
+}
+.div_a{
+	margin-left: 10px;
+	width: 300px;
+}
+.div_b{
+	margin-left:50%;
+	margin-top: -50%;
+	width: 300px;
+
+}
+#button{
+	background: #aeaeae;
+	width: 100px;
+	height: 45px;
+	font-family: arial;
+	border-radius: 15px;
+	margin-top:35px;
+	cursor: pointer;
+	text-align: center;
+
+}
+
+.div a{
+text-align: center;
+text-decoration: none;
+}
+
+#p{
+color: black;
+margin-left:50%;
+margin-top: -30px;
+
+}
+ </style>
+
+
+
 </head>
 <body>
+	<div class="div">
 		<%= form_for Funcionario.new do |f| %>
-	Nome<input type="text" name="funcionario[nome]"><br>
+	<div class="div_a">
+	<p>Nome</p>
+		<input type="text" name="funcionario[nome]">
 
-Endereço<input type="text" name="funcionario[endereco]"><br>
+	<p>Endereço</p>
+		<input type="text" name="funcionario[endereco]">
 
-Telefone<input type="text" name="funcionario[telefone]"><br>
+	<p>Telefone</p>
+		<input type="text" name="funcionario[telefone]">
+	<p>CPF</p>
+		<input type="text" name="funcionario[cpf]" >
+		
+		</div>
+		
+		<div class="div_b">
+	<p>RG</p>
+		<input type="text" name="funcionario[rg]" >
+	
+	<p>CNPJ</p>
+		<input type="text" name="funcionario[cnpj]">
 
-CPF<input type="text" name="funcionario[cpf]"><br>
-
-RG<input type="text" name="funcionario[rg]"><br>
-
-CNPJ<input type="text" name="funcionario[cnpj]"><br>
-
-Insrição Estadual<input type="text" name="funcionario[inscricao_estadual]"><br>
-
-	<button type="submit">Cadastra</button>
-
+	<p>Insrição Estadual</p>
+	<input type="text" name="funcionario[inscricao_estadual]">
+	
+	<button type="submit" id="button">Cadastra</button><p id="p"><a href="/">Voltar ao inicio</a></p>
+	
+	</div>
 		<%  end %>
+		
+		</div>
 </body>
 </html>

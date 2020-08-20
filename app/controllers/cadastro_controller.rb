@@ -5,15 +5,19 @@ class CadastroController < ApplicationController
 		cliente = Cliente.create valor
 	end
 	def create_func
-		valor_func = params.require(:funcionario).permit!
+		valor_func = params.require(:fornecedor).permit!
 		
-		funcionario = Funcionario.create valor_func
+		fornecedor = Fornecedore.create valor_func
 	end
 
 	def create_pago
 		valor_pago = params.require(:pago).permit!
 
 		pago = ContaPaga.create valor_pago
+	end
+	def create_recebe
+		valor_receber = params.require(:receber).permit!
+		receber = ContaRecerbe.create valor_receber
 	end
 
 end

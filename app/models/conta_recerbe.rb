@@ -1,0 +1,2 @@
+class ContaRecerbe < ApplicationRecord
+end

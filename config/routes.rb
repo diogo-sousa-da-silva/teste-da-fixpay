@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get "/cadastro/cadastro-fornecedor" => "cadastro#cadastro-fornecedor"
   get "/cadastro/cadastro-cliente" => "cadastro#cadastro-cliente"
   root "cadastro#index"
+  get "/cadastro/conta-paga" => "cadastro#conta-paga"
+  get "/cadastro/conta-receber" => "cadastro#conta-receber"
 end

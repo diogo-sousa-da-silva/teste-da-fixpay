@@ -16,8 +16,8 @@ class CadastroController < ApplicationController
 		pago = ContaPaga.create valor_pago
 	end
 	def create_recebe
-		valor_receber = params.require(:receber).permit!
-		receber = ContaRecerbe.create valor_receber
+		valor_receber = params.require(:recebemento).permit!
+		recebemento = ContaRecerbe.create valor_receber
 	end
 
 end
